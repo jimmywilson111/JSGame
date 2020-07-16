@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>JSGame Guess The Number</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JSGame Guess the Number from 1 to 1000</h1>
+        <div class="row justify-content-between">
+            <div class="game col-lg-5">
+                <h2>Choose your destiny!</h2>
+                <h3>You have <span class="align-items-center" id="count">10</span>  attempts.</h3> 
+                <input type="number" min="1" max="1000" id="mynum" placeholder="Enter your number..." required>
+                <button id="check">Try!</button>    
+            </div>
+            <div class="col-lg-6">
+                <article>
+                    <h2>Game rules:</h2>
+                    <p>1. The program generates a random integer from 0 to 1000.</p>
+                    <p>2. The user must guess it in no more than 10 attempts.</p>
+                    <p>3. After each unsuccessful attempt, more or less number entered by the user should be reported than what is hidden.</p>
+                    <p>4. If in 10 attempts the number is not guessed, then game is over.</p>
+                </article>
+            </div>
+        </div>
+        <h4 id="out"></h4>
+    </div>
+
+    <script src="./script/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

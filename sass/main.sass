@@ -1,0 +1,132 @@
+@import url(../css/fonts.css)
+@import variables.sass
+body
+    font-family: $main-font
+    text-transform: uppercase
+    height: 90vh
+    background: url(../img/bg.jpg) no-repeat center
+    h1
+        margin-top: 60px
+        font-size: 40px
+        text-align: center
+        color: $main-color
+        padding-bottom: 25px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 0
+            height: 0
+            border-top: 20px solid transparent
+            border-right: 70px solid $main-color
+            border-bottom: 20px solid transparent
+            left: -45px
+            top: 3px
+        &::after
+            content: ''
+            position: absolute
+            width: 0
+            height: 0
+            border-top: 20px solid transparent
+            border-left: 70px solid $main-color
+            border-bottom: 20px solid transparent
+            right: -45px
+            top: 3px
+    h2
+        margin-top: 20px
+        font-size: 20px
+        text-align: center
+        color: $second-color
+        padding-bottom: 20px
+    h3
+        text-align: center
+        position: relative
+        margin-bottom: 25px
+        color: $white
+    h4
+        margin-top: 35px
+        font-size: 35px
+        text-align: center
+        color: $white
+    span
+        display: block
+        position: relative
+        width: 50px
+        height: 50px
+        text-align: center
+        color: $white
+        background-color: $main-color
+        margin: 15px 0
+        padding: 8px 0
+        left: 44%
+        border-radius: 50%
+    article
+        width: 80%
+        position: relative
+        background-color: $bg
+        padding: 10px 25px 25px
+        
+        p
+            font-size: 16px
+            line-height: 24px
+            color: $white
+            padding-bottom: 10px
+        &::before
+            content: ''
+            position: absolute
+            top: -3px
+            left: -3px
+            right: -3px
+            bottom: 0
+            background-color: $white
+            transform: skew(-2deg, -2deg)
+            z-index: -1
+    .game
+        position: relative
+        background-color: $bg
+        padding: 10px 25px
+        justify-content: center !important
+        &::before
+                content: ''
+                position: absolute
+                top: -3px
+                left: -3px
+                right: -3px
+                bottom: 0
+                background-color: $white
+                transform: skew(2deg, 2deg)
+                z-index: -1
+        input
+            position: relative
+            left: 15%
+            padding: 3px 5px
+            width: 72%
+            font-size: 25px
+            margin-bottom: 25px
+            background-color: transparent
+            border-style: none
+            border-bottom: 3px solid $main-color
+            color: $white
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button 
+                -webkit-appearance: none
+        button
+            position: relative
+            left: 30%
+            background-color: transparent
+            color: $second-color
+            font-size: 20px
+            text-transform: uppercase
+            border: 2px solid $second-color
+            padding: 10px 60px 
+            margin-bottom: 12px
+            overflow: hidden
+            transition: .3s ease
+            &:hover
+                background-color: $second-color
+                transition-delay: .3s
+                box-shadow: 0 0 10px $second-color
+                box-shadow: 0 0 20px $second-color
+                box-shadow: 0 0 40px $second-color
+                color: $black
+
